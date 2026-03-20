@@ -1,6 +1,6 @@
-import logo from '../assets/images/shopora-logo.png';
-import wishList from '../assets/images/wishList.png';
-import cart from '../assets/images/cart.jpeg';
+import logo from '../../assets/images/shopora-logo.png';
+import wishList from '../../assets/images/wishList.png';
+import cart from '../../assets/images/cart.jpeg';
 import Image from 'next/image';
 import './Header.css';
 
