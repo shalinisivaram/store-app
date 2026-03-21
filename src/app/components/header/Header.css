@@ -1,8 +1,19 @@
 .head-container{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    margin-left: 100px;
+    margin-right: 80px;
 }
 .logo{
     margin-right: auto;
+}
+
+.cart-icon{
+    margin-left: 0px;
+}
+
+.icon-container{
+    display: flex;
+    gap:15px;
 }
