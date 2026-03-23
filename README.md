@@ -99,13 +99,13 @@ store-app
 
 ⚙️ Installation & Setup
 1. Clone the repository
-git clone https://github.com/your-username/your-repo-name.git
+    git clone https://github.com/shalinisivaram/store-app
 2. Navigate to project
-cd your-repo-name
+    cd store-app
 3. Install dependencies
-npm install
+    npm install
 4. Run the app
-npm run dev
+    npm run dev
 
 Open 👉 http://localhost:3000
 
