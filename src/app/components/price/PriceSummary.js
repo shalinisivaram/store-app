@@ -13,7 +13,6 @@ export default function PriceSummary({ cartItems }) {
         });
 
         totalPrice = itemPrice + PlatformFee
-        localStorage.setItem('totalPrice', totalPrice)
     }
 
     return (
