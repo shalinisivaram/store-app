@@ -2,7 +2,7 @@ import logo from '../../assets/images/shopora-logo.png';
 import wishList from '../../assets/images/wishList.png';
 import cart from '../../assets/images/cart.jpeg';
 import Image from 'next/image';
-import './Header.css';
+import './header.module.css';
 import Link from 'next/link';
 
 export function Header() {

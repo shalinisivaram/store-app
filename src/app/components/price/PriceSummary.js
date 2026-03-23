@@ -1,4 +1,4 @@
-import './PriceSummary.css'
+import './PriceSummary.module.css'
 export default function PriceSummary({ cartItems }) {
     let itemPrice = 0;
     let totalPrice = 0;

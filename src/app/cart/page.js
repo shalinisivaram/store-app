@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react"
 import Image from "next/image";
 import { Header } from "../components/header/Header";
-import './cart.css';
+import './cart.module.css';
 import '../../app/globals.css';
 import DeleteButton from "../assets/images/delete.png";
 import PriceSummary from "../components/price/PriceSummary";
@@ -10,10 +10,11 @@ import Link from "next/link";
 import MessageComponent from "../components/message/MessageComponent";
 
 export default function Cart() {
-    const [cartItems, setCartItems] = useState()
+    const [cartItems, setCartItems] = useState([])
     useEffect(() => {
         const getCartItems = () => {
-            setCartItems(JSON.parse(localStorage.getItem('cartItems')) || [])
+            const stored = localStorage.getItem("cartItems");
+            setCartItems(stored ? JSON.parse(stored) : []);
         }
 
         getCartItems()
@@ -80,7 +81,7 @@ export default function Cart() {
                 }
             </div>
             {!cartItems || cartItems.length == 0 && (
-                <MessageComponent type={'cart'} message={'Your Cart is Empty'} btnText={'Go To Products'}/>
+                <MessageComponent type={'cart'} message={'Your Cart is Empty'} btnText={'Go To Products'} />
             )}
         </>
     )
