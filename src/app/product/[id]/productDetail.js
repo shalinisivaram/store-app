@@ -76,15 +76,15 @@ export function ProductDetail({ productId }) {
                             <span className='product-rate'>{product.rating?.rate}</span>
                             <Image src={`/images/ratings/rating-${Math.round(product.rating?.rate * 2) * 5}.png`} width={100} height={30} alt="rate" />
                             <span className="count">{`(${product.rating?.count})`}</span>
-                                <p className="product-price">₹.{product.price}</p>
+                            <p className="product-price">₹.{product.price}</p>
 
                         </div>
                         <div className="btn-container">
                             {isInWishlist(product.id) ? (
-                                    <Image src={heartIcon} width={40} height={40} alt='wishlist' onClick={() => removeItemFromWishList(product.id)} />
-                                ) : (
-                                    <Image src={WishlistIcon} width={40} height={40} alt='wishlist' onClick={() => addItemToWishList(product)} />
-                                )}
+                                <Image src={heartIcon} width={40} height={40} alt='wishlist' onClick={() => removeItemFromWishList(product.id)} />
+                            ) : (
+                                <Image src={WishlistIcon} width={40} height={40} alt='wishlist' onClick={() => addItemToWishList(product)} />
+                            )}
                             <Link href="/">
                                 <button type="cancel" className="cancel-btn">Go Back</button>
                             </Link>

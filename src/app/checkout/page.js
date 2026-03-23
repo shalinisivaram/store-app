@@ -4,7 +4,6 @@ import './checkout.css';
 import { Header } from "../components/header/Header";
 import PriceSummary from "../components/price/PriceSummary";
 import Link from "next/link";
-import Image from "next/image";
 import MessageComponent from "../components/message/MessageComponent";
 
 export default function Checkout() {

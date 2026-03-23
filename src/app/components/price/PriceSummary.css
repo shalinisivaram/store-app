@@ -1,14 +1,14 @@
-.price-container{
-    padding: 20px;
-      border-radius: 12px;
+.price-container {
+  padding: 20px;
+  border-radius: 12px;
   background: rgb(225, 235, 243);
   border: 1px solid #eee;
   transition: all 0.3s ease;
-  margin-top:40px;
+  margin-top: 40px;
   font-size: 18px;
   display: flex;
   flex-direction: column;
-  gap:20px;
+  gap: 20px;
   height: 300px;
 }
 
@@ -17,6 +17,6 @@
   width: 100%;
 }
 
-.total-amt{
-    font-weight: bold;
+.total-amt {
+  font-weight: bold;
 }

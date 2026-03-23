@@ -5,7 +5,7 @@ export default async function getProductId({ params }) {
     const id = resolvedParam.id;
     return (
         <>
-            <ProductDetail productId={id}/>
+            <ProductDetail productId={id} />
         </>
     )
 }
