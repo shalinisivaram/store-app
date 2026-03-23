@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react"
 import Image from "next/image";
 import { Header } from "../components/header/Header";
-import './cart.module.css';
+import './cart.css';
 import '../../app/globals.css';
 import DeleteButton from "../assets/images/delete.png";
 import PriceSummary from "../components/price/PriceSummary";

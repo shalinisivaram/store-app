@@ -1,6 +1,6 @@
 "use client"
 import { useState, useEffect } from "react";
-import './checkout.module.css';
+import './checkout.css';
 import { Header } from "../components/header/Header";
 import PriceSummary from "../components/price/PriceSummary";
 import Link from "next/link";

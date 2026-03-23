@@ -3,7 +3,7 @@ import Link from "next/link";
 import CheckIcon from '../../assets/images/check.png';
 import EmptyCart from '../../assets/images/empty-cart.png';
 import sadFace from '../../assets/images/sad-face.png';
-import './MessageComponent.module.css';
+import './MessageComponent.css';
 
 export default function MessageComponent({ type, message, btnText }) {
     return (

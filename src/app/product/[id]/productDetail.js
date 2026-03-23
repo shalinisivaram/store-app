@@ -2,7 +2,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import Image from "next/image";
-import './productDetail.module.css'
+import './productDetail.css'
 import { Header } from "@/app/components/header/Header";
 import Link from "next/link";
 import WishlistIcon from '../../assets/images/wishlist-black.png';

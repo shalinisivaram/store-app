@@ -6,7 +6,7 @@ import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Image from 'next/image';
-import './ProductGrid.module.css'
+import './ProductGrid.css'
 import Link from 'next/link';
 
 
