@@ -9,6 +9,7 @@ import Image from 'next/image';
 import './ProductGrid.css';
 import Link from 'next/link';
 
+
 export function ProductGrid({ products }) {
 
     return (
@@ -31,26 +32,45 @@ export function ProductGrid({ products }) {
                             title="green iguana"
                         />
                         <CardContent sx={{ flexGrow: 1 }}>
-                            <Typography gutterBottom variant="h5" component="div">
+                            <Typography gutterBottom
+                                sx={{
+                                    color: 'text.secondary',
+                                    display: "-webkit-box",
+                                    WebkitLineClamp: 2,
+                                    WebkitBoxOrient: "vertical",
+                                    overflow: "hidden",
+                                    minHeight: 60
+                                }}
+                                variant="h5" component="div">
                                 {product.title}
                             </Typography>
                             <Typography variant="body2"
                                 sx={{
                                     color: 'text.secondary',
                                     display: "-webkit-box",
-                                    WebkitLineClamp: 3,
+                                    WebkitLineClamp: 2,
                                     WebkitBoxOrient: "vertical",
                                     overflow: "hidden",
                                 }}>
                                 {product.description}
                             </Typography>
+                            <Typography component="div"
+                                sx={{
+                                    marginTop: 2,
+                                    marginBottom: 5,
+                                }}>
+                                <span className='product-rate'>{product.rating.rate}</span>
+                                <Image src={`/images/ratings/rating-${Math.round(product.rating?.rate * 2) * 5}.png`} width={80} height={20} alt="rate" />
+                                <span className="product-rate">{`(${product.rating?.count})`}</span>
+                                <div className="product-price">₹{product.price}</div>
+                            </Typography>
                         </CardContent>
                         <CardActions>
-                            <Button size="small" sx={{ fontWeight: 'bold', fontSize: 15, marginLeft: 12 }}>View Details
-                                <Link href={`/product/${product.id}`}>
-                                    <Image src={ArrowIcon} className='arrow-icon' alt="arrow"/>
-                                </Link>
-                            </Button>
+                            <Link href={`/product/${product.id}`}>
+                                <Button size="small" sx={{ fontWeight: 'bold', fontSize: 15, marginLeft: 12 }}>View Details
+                                    <Image src={ArrowIcon} className='arrow-icon' alt="arrow" />
+                                </Button>
+                            </Link>
 
                         </CardActions>
                     </Card>

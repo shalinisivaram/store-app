@@ -1,0 +1,89 @@
+.cart-item-container {
+    margin: 40px 10px 10px 100px;
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 12px;
+    background: rgb(225, 235, 243);
+
+    border: 1px solid #eee;
+    transition: all 0.3s ease;
+    width: 800px
+}
+
+.cart-item-container:hover {
+    box-shadow: 0 8px 20px rgba(67, 123, 173, 0.2);
+    transform: translateY(-3px);
+}
+
+.product-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.product-price {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.delete-btn {
+    margin-left: auto;
+}
+
+.page-container {
+    display: flex;
+    gap: 40px;
+}
+
+.page-heading {
+    margin-left: 150px;
+    color:rgb(67, 123, 173)
+}
+
+.cart-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.qty-box{
+    border: 1px solid black;
+    height:40px;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.cart-detail{
+    display: flex;
+    gap: 30px;
+}
+
+.item-qty{
+    margin: 0px 10px 0px 10px;
+}
+
+.qty-heading{
+    margin-right: 10px;
+}
+
+.qty-btn{
+    border: none;
+    font-size: 20px;
+}
+
+.cart-btn{
+    background-color: rgb(67, 123, 173);
+    font-size: 20px;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    border-width: 1;
+}
+
+.btn-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}

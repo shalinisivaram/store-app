@@ -12,8 +12,12 @@ export function Header() {
                 <Image src={logo} alt="logo" width="150" height="150" className='logo' />
             </Link>
             <div className='icon-container'>
-                <Image src={wishList} alt="wishlist" width="50" height="50" />
-                <Image src={cart} alt="cart" width="50" height="50" className='cart-icon' />
+                <Link href="/wishlist">
+                    <Image src={wishList} alt="wishlist" width="50" height="50" />
+                </Link>
+                <Link href="/cart">
+                    <Image src={cart} alt="cart" width="50" height="50" className='cart-icon' />
+                </Link>
             </div>
 
         </div>
