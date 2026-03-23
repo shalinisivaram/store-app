@@ -4,7 +4,7 @@ featuring Product Listing, Single Product page, Wishlist, cart and Checkout flow
 🚀 Features
 🛍️ Product Listing  
   - Fetched Product Data from Fake Store API
-  - List all the products with Title, Price and Short Description
+  - Listing all the products with Title, Price and Short Description
 
 🔍 Product Details 
   - Displays the details of single product with Title, Price, Description
@@ -15,12 +15,12 @@ featuring Product Listing, Single Product page, Wishlist, cart and Checkout flow
   - Add Products to Cart
   - Increase/Decrease Product Quantity
   - Remove item from Cart
-  - Persist Cart Data using LocalStorage
-  - Display Total and SubTotal Amount
+  - Persisting Cart Data using LocalStorage
+  - Displays Total and SubTotal Amount
 
 ❤️ Wishlist
   - Add/Remove Item in Wishlist
-  - Persist Wishlist Data using LocalStorage
+  - Persisting Wishlist Data using LocalStorage
 
 📦 Checkout
   - Created Checkout Page with Cart Summary
