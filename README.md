@@ -1,36 +1,111 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+A Fully Functional ECommerce frontend Application built with Next.js, 
+featuring Product Listing, Single Product page, Wishlist, cart and Checkout flow.
 
-## Getting Started
+🚀 Features
+🛍️ Product Listing  
+  - Fetched Product Data from Fake Store API
+  - List all the products with Title, Price and Short Description
 
-First, run the development server:
+🔍 Product Details 
+  - Displays the details of single product with Title, Price, Description
+  - Displays the Rating Details
+  - Allows to add Product to Cart/ Add Items to Wishlist
 
-```bash
+🛒 Cart Management
+  - Add Products to Cart
+  - Increase/Decrease Product Quantity
+  - Remove item from Cart
+  - Persist Cart Data using LocalStorage
+  - Display Total and SubTotal Amount
+
+❤️ Wishlist
+  - Add/Remove Item in Wishlist
+  - Persist Wishlist Data using LocalStorage
+
+📦 Checkout
+  - Created Checkout Page with Cart Summary
+  - Added Basic Checkout form 
+  - Place Order Flow
+
+🧑‍💻 Tech Stack
+  - FrameWork: Next.js (App Router)
+  - Frontend: React
+  - State Management: React Hooks
+  - Styling: MUI / CSS
+  - Storage: localStorage
+
+store-app
+│   ├── images
+│   │   └── ratings #loads rating star images
+│   │       ├── rating-0.png
+│   │       ├── rating-10.png
+│   │       ├── rating-15.png
+│   │       ├── rating-20.png
+│   │       ├── rating-25.png
+│   │       ├── rating-30.png
+│   │       ├── rating-35.png
+│   │       ├── rating-40.png
+│   │       ├── rating-45.png
+│   │       ├── rating-5.png
+│   │       └── rating-50.png
+└── src
+    └── app
+        ├── assets #loads icon used in the app
+        │   └── images
+        │       ├── .DS_Store
+        │       ├── arrow.png
+        │       ├── cart.jpeg
+        │       ├── check.png
+        │       ├── delete.png
+        │       ├── empty-cart.png
+        │       ├── heart.png
+        │       ├── sad-face.png
+        │       ├── shopora-logo.png
+        │       ├── wishList.png
+        │       └── wishlist-black.png
+        ├── cart
+        │   ├── cart.css 
+        │   └── page.js #cart page
+        ├── checkout
+        │   ├── checkout.css
+        │   └── page.js #checkout page
+        ├── components
+        │   ├── header
+        │   │   ├── Header.css
+        │   │   └── Header.js #header component
+        │   ├── home
+        │   │   └── HomePage.js #product listing page
+        │   ├── message
+        │   │   ├── MessageComponent.css
+        │   │   └── MessageComponent.js #show message component
+        │   ├── price
+        │   │   ├── PriceSummary.css
+        │   │   └── PriceSummary.js #displays price details
+        │   └── productGrid
+        │       ├── ProductGrid.css
+        │       └── ProductGrid.js #product card
+        ├── favicon.ico
+        ├── globals.css
+        ├── layout.js
+        ├── page.js
+        ├── page.module.css
+        ├── product 
+        │   └── [id]
+        │       ├── page.js #single product details
+        │       ├── productDetail.css
+        │       └── productDetail.js
+        └── wishlist
+            └── page.js #wishlist page
+
+⚙️ Installation & Setup
+1. Clone the repository
+git clone https://github.com/your-username/your-repo-name.git
+2. Navigate to project
+cd your-repo-name
+3. Install dependencies
+npm install
+4. Run the app
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open 👉 http://localhost:3000
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
