@@ -13,8 +13,7 @@ export default function Cart() {
     const [cartItems, setCartItems] = useState()
     useEffect(() => {
         const getCartItems = () => {
-            setCartItems(JSON.parse(localStorage.getItem('cartItems')))
-            console.log(JSON.parse(localStorage.getItem('cartItems')))
+            setCartItems(JSON.parse(localStorage.getItem('cartItems')) || [])
         }
 
         getCartItems()
